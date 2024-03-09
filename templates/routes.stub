@@ -1,0 +1,14 @@
+Route::get('generator_builder', '\Techamz\GeneratorBuilder\Controllers\GeneratorBuilderController@builder')->name('io_generator_builder');
+
+Route::get('field_template', '\Techamz\GeneratorBuilder\Controllers\GeneratorBuilderController@fieldTemplate')->name('io_field_template');
+
+Route::get('relation_field_template', '\Techamz\GeneratorBuilder\Controllers\GeneratorBuilderController@relationFieldTemplate')->name('io_relation_field_template');
+
+Route::post('generator_builder/generate', '\Techamz\GeneratorBuilder\Controllers\GeneratorBuilderController@generate')->name('io_generator_builder_generate');
+
+Route::post('generator_builder/rollback', '\Techamz\GeneratorBuilder\Controllers\GeneratorBuilderController@rollback')->name('io_generator_builder_rollback');
+
+Route::post(
+    'generator_builder/generate-from-file',
+    '\Techamz\GeneratorBuilder\Controllers\GeneratorBuilderController@generateFromFile'
+)->name('io_generator_builder_generate_from_file');

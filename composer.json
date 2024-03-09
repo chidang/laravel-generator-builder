@@ -1,0 +1,28 @@
+{
+    "name": "techamz/laravel-generator-builder",
+    "description": "Flexadmin Laravel Generator GUI Builder",
+    "type": "library",
+    "require": {
+        "php": ">=7.2.34",
+        "illuminate/support": ">=5.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Techamz\\GeneratorBuilder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Techamz\\GeneratorBuilder\\GeneratorBuilderServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Techamz"
+        }
+    ],
+    "minimum-stability": "dev"
+}
